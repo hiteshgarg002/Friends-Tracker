@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#455a64"
+    android:weightSum="1">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="70dp"
+        android:layout_width="match_parent"
+        android:theme="@style/TextLabel"
+        android:layout_height="43dp">
+
+        <EditText
+            android:id="@+id/mb"
+            android:layout_width="match_parent"
+            android:inputType="phone"
+            android:layout_height="43dp"
+            android:hint="Mobile Number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Enter Date:"
+            android:textColor="@color/colorDark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="YYYY-MM-DD"
+            android:inputType="date" />
+
+        <ImageButton
+            android:id="@+id/searchLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#455a64"
+            app:srcCompat="@drawable/ic_search_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_weight="0.02"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.15"
+            android:text="TIME:"
+            android:textSize="20dp"
+            android:textColor="@color/colorDark"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FROM:"
+            android:textColor="@color/colorDark"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/fromTime"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:ems="10"
+            android:hint="HH:MM:SS"
+            android:inputType="time"
+            android:layout_weight="0.22" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:text="TO:"
+            android:textColor="@color/colorDark"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/toTime"
+            android:layout_marginLeft="10dp"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="HH:MM:SS"
+            android:inputType="time" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:layout_marginTop="25dp" />
+
+</LinearLayout>

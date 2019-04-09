@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/colorDarkGray2"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="305dp"
+        android:layout_marginTop="20dp"
+        android:theme="@style/TextLabel"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/firstName"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            android:hint="First Name"
+            android:textSize="13dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel"
+        android:layout_weight="0.05">
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="Last Name"
+            android:textSize="13dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="305dp"
+        android:theme="@style/TextLabel"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/phoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:textSize="13dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="305dp"
+        android:theme="@style/TextLabel"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05">
+
+        <EditText
+            android:id="@+id/emailID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="13dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:theme="@style/TextLabel"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05">
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="13dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="305dp"
+        android:theme="@style/TextLabel"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05">
+
+        <EditText
+            android:id="@+id/conPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textSize="13dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.05"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/btnImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorDarkGray2"
+                app:srcCompat="@drawable/ic_add_a_photo_black_24dp" />
+
+            <Button
+                android:id="@+id/clearBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorLightGray2"
+                android:text="Clear" />
+
+            <Button
+                android:id="@+id/conReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/colorLightGray2"
+                android:text="Sign Up" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="144dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/ic_photo_black_24dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.27">
+
+        <TextView
+            android:id="@+id/abc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Already Signed in?"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/already"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Log in"
+            android:background="@color/colorLightGray2"/>
+    </LinearLayout>
+
+
+</LinearLayout>
